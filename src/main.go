@@ -19,7 +19,7 @@ func main() {
 
 	router.UserRouter(server, "/user")
 
-	fmt.Println("Server run on port : ", port)
-	server.Engine.Run(":" + port)
+	fmt.Printf("Server run on port : %s", port)
+	server.Engine.Run(": " + port)
 
 }

@@ -7,5 +7,6 @@ import (
 
 func UserRouter(server model.Server, path string) {
 	router := server.Engine.Group(path)
-	router.GET("", controller.CheckUser)
+	router.POST("", controller.FindAllUser)
+	router.POST("/one", controller.FindUser)
 }
